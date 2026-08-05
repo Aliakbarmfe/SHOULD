@@ -90,9 +90,10 @@
             left: -350px;
             width: 300px;
             height: 100%;
-            background: rgba(25, 20, 45, 0.95);
-            backdrop-filter: blur(15px);
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
             z-index: 200;
             padding: 30px 20px;
             display: flex;
@@ -218,6 +219,61 @@
             padding: 6px 12px;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* کارت چالش بازار */
+        .challenge-card {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(18, 14, 38, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            text-align: right;
+            border-top: 4px solid #00f2fe;
+            margin-bottom: 30px;
+        }
+
+        .challenge-card h2 {
+            font-size: 1.3rem;
+            color: #00f2fe;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .challenge-card p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: #e2e8f0;
+            margin-bottom: 12px;
+        }
+
+        .reward-list {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .reward-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            padding: 12px 15px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .reward-value {
+            color: #00ff88;
+            font-weight: bold;
         }
 
         /* کارت انتهای سایت (درباره بازار) */
@@ -421,6 +477,30 @@
         </div>
     </div>
 
+    <!-- کارت چالش بازار (جدید) -->
+    <div class="challenge-card">
+        <h2>❄️ چـالش بـازار #لاکچر شــروع شــد</h2>
+        <p>🤴 <b>بــه نـام خـداونـد جـان و خـرد</b></p>
+        <p>درود خدمت تمامی مشتریان گرامی بازار بزرگ #لاکچر 🙏</p>
+        <p>من برای اینکه شما سود بیشتری ببرید، چالشی ویژه برای مشتریان عزیز بازار #لاکچر قرار دادم 💎</p>
+        <p>🎯 هدف این چالش، تجربه خرید و فروش گاد همراه با سود گادتر برای شماست! 🔥</p>
+        
+        <div class="reward-list">
+            <div class="reward-item">
+                <span>ارزش ۱۰۰ به بالا:</span>
+                <span class="reward-value">۲۵ تا ۳۰ هزار تومان پاداش نقدی 🍀</span>
+            </div>
+            <div class="reward-item">
+                <span>ارزش ۵۰ به بالا:</span>
+                <span class="reward-value">۱۵ تا ۲۰ هزار تومان پاداش نقدی ☘️</span>
+            </div>
+            <div class="reward-item">
+                <span>ارزش ۲۰ به بالا:</span>
+                <span class="reward-value">۱۰ هزار تومان پاداش نقدی 🍀</span>
+            </div>
+        </div>
+    </div>
+
     <!-- کارت درباره بازار (در انتهای سایت) -->
     <div class="about-card">
         <h2>درباره بازار</h2>
@@ -507,4 +587,5 @@
         }
     </script>
 </body>
-</html>
+    </html>
+    
