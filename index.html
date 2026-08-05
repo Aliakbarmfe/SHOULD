@@ -18,7 +18,7 @@
         body {
             min-height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             /* پس‌زمینه با ترکیب ۴ رنگ: آبی (بالا)، بنفش (پایین)، زرد (چپ)، ارغوانی (راست) */
             background: 
@@ -29,9 +29,8 @@
                 #0f0c20;
             background-attachment: fixed;
             color: #ffffff;
-            padding: 20px;
-            position: relative;
-            overflow-x: hidden;
+            padding: 40px 20px;
+            overflow-y: auto; /* فعال‌سازی اسکرول روان */
         }
 
         /* دکمه منوی همبرگری (بالا سمت چپ) */
@@ -163,7 +162,8 @@
             padding: 30px 25px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
             text-align: right;
-            margin-top: 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
         .header-text h1 {
@@ -218,6 +218,47 @@
             padding: 6px 12px;
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* کارت انتهای سایت (درباره بازار) */
+        .about-card {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(18, 14, 38, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            text-align: right;
+            border-top: 4px solid #ffd700;
+        }
+
+        .about-card h2 {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .about-card p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: #e2e8f0;
+            margin-bottom: 12px;
+        }
+
+        .about-card .signature {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.15);
+            font-weight: bold;
+            color: #ff79c6;
+            text-align: left;
+            direction: rtl;
         }
 
         /* پاپ‌آپ (Modal) */
@@ -338,7 +379,7 @@
         <span></span>
     </div>
 
-    <!-- منوی کشویی (حاوی علامت @ طبق درخواست) -->
+    <!-- منوی کشویی -->
     <div class="drawer-overlay" id="drawerOverlay"></div>
     <div class="drawer" id="drawer">
         <div class="drawer-content">
@@ -351,14 +392,14 @@
         <a href="https://Fizon.vercel.app" target="_blank" class="site-btn">سایت ما</a>
     </div>
 
-    <!-- کارت اصلی -->
+    <!-- کارت اصلی پشتیبانی -->
     <div class="container">
         <div class="header-text">
             <h1>به بخش پشتیبانی لاکچر خوش آمدید</h1>
             <p>این تیم 24 ساعته پاسخ گوی شما هستن دارای ایمن ترین ها در کمترین زمان پاسخگویی شما هستن با راحتی کانال گروه خود رو خرید فروش کنید اینجا هم نوع چی خرید فروش میشود با راحتی ایمن با ایمن ها باش</p>
         </div>
 
-        <!-- کادرهای اطلاعات بدون استفاده از @ -->
+        <!-- کادرهای اطلاعات -->
         <div class="info-box" onclick="openChannel()">
             <span class="info-title">بازار:</span>
             <span class="info-value">trus9009t</span>
@@ -377,6 +418,20 @@
         <div class="info-box" onclick="copyText('09921651875')">
             <span class="info-title">شماره:</span>
             <span class="info-value">09921651875</span>
+        </div>
+    </div>
+
+    <!-- کارت درباره بازار (در انتهای سایت) -->
+    <div class="about-card">
+        <h2>درباره بازار</h2>
+        <p>سلام خدمت همه دوستان عزیز 🌹</p>
+        <p>به اطلاع همه اعضای محترم می‌رسانم که از تاریخ ۱۴۰۵/۰۵/۱۳ ، بازار لاکچر کاملاً خریداری شد آن رو افتتاح کردیم.</p>
+        <p>خیلی از شما عزیزان از قبل بنده را می‌شناسید و خود بنده هم از اعتماد و حمایت همه شما تشکر می‌کنم.</p>
+        <p>از امروز، از آدم های مورد تأیید بازار استفاده خواهد شد تا همه خرید و فروش‌ها با ، امنیته بیشتری انجام شوند.</p>
+        <p>امیدوارم با همراهی شما، بتوانیم این بازار رو امن، قابل اعتماد برای همه افراد فراهم کنیم.</p>
+        <div class="signature">
+            با احترام 🌹<br>
+            مالک بازار لاکچر | حاج حسین
         </div>
     </div>
 
