@@ -327,6 +327,7 @@
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
             text-align: right;
             border-top: 4px solid #ffd700;
+            margin-bottom: 30px;
         }
 
         .about-card h2 {
@@ -353,6 +354,26 @@
             color: #ff79c6;
             text-align: left;
             direction: rtl;
+        }
+
+        /* کارت چالش جدید در انتها */
+        .new-challenge-card {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(18, 14, 38, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            text-align: right;
+            border-top: 4px solid #00ff88;
+            margin-bottom: 30px;
+            white-space: pre-line;
+            line-height: 1.9;
+            font-size: 0.95rem;
+            color: #e2e8f0;
         }
 
         /* پاپ‌آپ (Modal) */
@@ -566,6 +587,30 @@
         </div>
     </div>
 
+    <!-- کادر چالش هیجان انگیز جدید (اضافه شده به انتها) -->
+    <div class="new-challenge-card">چالش هیجان انگیز بازارܠࡐ‌ܢܚࡅ߳ܝ‌ شروع شد☘️
+این چالش اینجوری که هرکس در روز 6 تا خرید فروش در بازار ما انجام بده به هدیه 500 تومانی ما میرسه اما این جایزه قانون هایی داره این قانون ها دستور های ساده برای دریافت جایزه هستند 💫
+
+قوانین مسابقه 
+
+خرید فروش برید برسی میشه اگه فیکه باشه شما در این بازار ریم میشد ⭕
+
+باید خرید فروش باید بالای 50 تومان باشه 
+
+نوع خرید فروش فرق ندارد شما بخواهید بخرید یا بفروشید 
+دقت داشته باشید باید بین هر خرید فروش 5 ساعت بگذره 💥
+
+این مسابقه برای انگیزه بیشتر خرید فروش هست😉
+
+هیچ کس نباید با کسی خرید فروش کرده بیشتر از دوبار خرید فروش کنه 
+
+این مسابقه رو بنده داوری میکنم تا کسی به مشکل نخورد 🤝
+
+قوانین را با دقت بخوانید تا به مشکلی نخورید 😌
+
+با احترام 🌹
+مالکه بازار ‌ܠࡐ‌ܢܚࡅ߳ܝ‌ | حاج حسین</div>
+
     <!-- پاپ آپ گروه -->
     <div class="modal-overlay" id="groupModal">
         <div class="modal">
@@ -578,7 +623,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- پیام کپی شد -->
     <div class="toast" id="toast">با موفقیت کپی شد!</div>
 
@@ -599,7 +644,6 @@
             drawer.classList.remove('active');
             drawerOverlay.classList.remove('active');
         });
-
         // اکشن بازار
         function openChannel() {
             window.open('https://rubika.ir/trus9009t', '_blank');
@@ -630,7 +674,7 @@
 
         // نمایش پیام Toast
         function showToast() {
-                    const toast = document.getElementById('toast');
+            const toast = document.getElementById('toast');
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
